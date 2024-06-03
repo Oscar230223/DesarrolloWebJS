@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-// DB_MONGO = process.env.CONNECTION;
-DB_MONGO = 'mongodb+srv://oscaromarhernandezdavila:Gmhxayq8qfF8YJX2@desarrolloweb.n1wblyp.mongodb.net/?retryWrites=true&w=majority&appName=DesarrolloWeb';
+DB_MONGO = 'mongodb://localhost:27017/BDUniversidadFronteriza';
+//DB_MONGO = 'mongodb+srv://oscaromarhernandezdavila:Gmhxayq8qfF8YJX2@desarrolloweb.n1wblyp.mongodb.net/?retryWrites=true&w=majority&appName=DesarrolloWeb';
 const connectDb = async () => {
   try {
     await mongoose.connect(DB_MONGO, {

@@ -5,6 +5,7 @@ const Estudiante = require('./Models/estudiante');
 const Buzon = require('./Models/buzon');
 const Chat = require('./Models/chat');
 const crypto = require("crypto");
+const chat = require('./Models/chat');
 
 
 // Estudiantes
@@ -104,8 +105,9 @@ router.post('/database/chat', async (req, res) => {
             mensaje: Mensaje,
         });
         const nuevoChat = await chat.save();
-        res.status(201).json(nuevoChat);
-        return res.render("Chat",chat)
+        //res.status(201).json(nuevoChat);
+        //return res.render("Chat",chat)
+        return res.redirect("/chat")
     } catch (error) {
         if (error.code === 11000) {
             const campoDuplicado = Object.keys(error.keyPattern)[0];
@@ -117,11 +119,12 @@ router.post('/database/chat', async (req, res) => {
 });
 
 
-router.get('/database/chatgrupals', async (req, res) => {
+router.get('/chat', async (req, res) => {
     try {
-        const collection = db.collection('chatgrupals');
-        const datos = await collection.find({}).toArray();
-        res.status(200).json(datos);
+        const datos = await chat.find();
+        console.log(datos);
+        return res.render("Chat",{datos:datos})
+        //res.status(200).json(datos);
     } catch (err) {
         res.status(500).json({ error: 'Ocurrió un error al obtener los datos' });
     }

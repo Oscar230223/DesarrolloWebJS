@@ -25,9 +25,9 @@ router.get("/Carreras", (req, res) => {
     res.render("Carreras");
 });
 
-router.get("/Chat", (req, res) => {
-    res.render("Chat");
-});
+/*router.get("/Chat", (req, res) => {
+    res.render("Chat",{datos:[]});
+});*/
 
 router.get("/Contacto", (req, res) => {
     res.render("contacto");

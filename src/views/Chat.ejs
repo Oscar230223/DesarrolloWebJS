@@ -44,12 +44,17 @@
             </h1>
             <h2>Mensajes</h2>
         </div>
+        <% for(var i = 0; i<datos.length; i++){ %>
+            <%= datos[i].usuario %>
+            <%= datos[i].mensaje %>
+            <br>
+        <% } %>
 
-        
 
         <form id="message-form" action="/database/chat" method="post">
             <input type="text" id="subject" name="Usuario" placeholder="Escribe tu Usuario" required>
             <input type="text" id="subject" name="Mensaje" placeholder="Escribe tu mensaje aquí" required>
+            
             <button type="submit">Enviar</button>
         </form>
         </div>
