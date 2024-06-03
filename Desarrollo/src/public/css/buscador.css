@@ -1,0 +1,55 @@
+.buscar-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+}
+
+.buscar-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buscar-button {
+    display: flex;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    position: relative;
+    top: 17px;
+}
+
+.results {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.results li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.results li:last-child {
+    border-bottom: none;
+}
+
+.results li:hover {
+    background-color: #f0f0f0; 
+    cursor: pointer;
+}

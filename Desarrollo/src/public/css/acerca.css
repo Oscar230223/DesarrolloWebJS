@@ -1,0 +1,33 @@
+.espacio {
+    text-align: center;
+    align-items: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon2 {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container > div:not(:last-child) {
+    margin-bottom: 30px; /* Espacio entre los divs del texto */
+}
+.container > div:not(:last-child) {
+    margin-right: 50px; /* Espacio horizontal entre los divs */
+}

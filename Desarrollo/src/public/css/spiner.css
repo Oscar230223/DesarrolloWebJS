@@ -1,0 +1,39 @@
+.list-container {
+  border: 2px solid #799b8c;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%; 
+  margin: 0 auto; 
+  font-size: 25px;
+  background-color: #f7f7f7;
+}
+
+.list-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.list-item {
+  width: 50%;
+}
+
+.list-item:nth-child(odd) {
+  margin-bottom: 20px; 
+}
+
+.list-item ul {
+  list-style-type:circle;
+  padding: 0;
+}
+
+.list-item b {
+  font-weight: bold;
+}
+
+.list-item ul li {
+  margin-bottom: 5px;
+  margin-left: 25px;
+}

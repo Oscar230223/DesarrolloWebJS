@@ -1,0 +1,75 @@
+/*Estilos Admisión*/
+ /* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: 500px;
+    padding: 1%;
+    float:inherit;
+  }
+  
+  .container img {
+    width: 52%;
+    height: 125%;
+  }
+  img{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .container p {
+    width: 50%;
+    font-size: 20px;
+    margin: 10%; 
+  }
+  .cuadro {
+    position: fixed;
+    top: 140px;
+    left: 18%;
+    width: 500px;
+    height: 700px;
+    background-color: rgba(9, 58, 17, 0.1); 
+  }
+  .title {
+    text-align: center;
+    }*/
+
+/*Estilos becas*/
+.recuadro {
+  padding: 20px; 
+  margin-left: 50px; 
+  width: 120%; 
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  font-weight: 400;
+  letter-spacing: 2px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.img {
+  margin-right: 100px;
+  margin-left: 90px;
+  width: 500px;
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.admision {
+  text-align: center;
+  color: #142623;
+}
+
+.pasos {
+  text-align: left;
+}
+
+.cuadro_verde {
+  background-color: #799b8c;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+}

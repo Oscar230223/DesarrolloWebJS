@@ -1,0 +1,40 @@
+.bienvenida {
+    background-color: #052026;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.ps {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.header {
+    background-color: #052026;
+}
+
+
+.columna-arriba {
+    background-color: #f2f2f2;
+}
+.columna-izquierda, .columna-derecha {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor {
+    background-color: #e4e0df;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns {
+    width: 200px;
+    background-color: #e4e0df;
+    color: black;
+    font-weight: 600;
+}

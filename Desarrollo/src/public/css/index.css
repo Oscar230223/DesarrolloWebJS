@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
+}
+
+/*Estilos header*/
+header {
+    font-size: 15px;
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    font-size: 35px;
+}
+.ufcj {
+    letter-spacing: 3px;
+    color: #052026;
+    font-weight: 700;
+    text-align: end;
+    transform: translate(3%);
+}
+.logo {
+    width: 90px;
+    height: 90px;
+    object-position: center;
+    transform: translate(10%);
+}
+
+/*Estilos navbar*/
+#menu {
+    background-color: #052026;
+    font-weight: 500;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: -16px;
+}
+
+#menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu-list li {
+    display: inline;
+    margin: 0 40px; /*espacio entre titles*/
+}
+
+#menu-list li:first-child {
+    margin-left: 0; /*eliminar margin izq.*/
+}
+
+#menu-list li:last-child {
+    margin-right: 0; /*eliminar margin der.*/
+}
+
+#menu-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Estilos Carrusel*/
+html, body, .carousel-container {
+    height: 100%!important;
+}
+
+/*Animación*/
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto!important;
+    background-size: cover;
+    background-color: #f6e2bd;
+}
+
+.carousel-slide {
+    flex: 1 0 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: rgb(0, 78, 52);
+    margin-top: auto;
+    margin-bottom: auto;
+    /*animation-delay: 3s;
+    animation: slide 10s infinite;*/    
+}
+
+.img {
+    width: 100%;
+}
+
+button {
+    position: absolute;
+    top: 57%;
+    bottom: auto;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+#prevBtn {
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#nextBtn {
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
