@@ -1,5 +1,4 @@
 let data = [
-    { name: "Inicio", url: "/" },
     { name: "Becas", url: "/Becas" },
     { name: "Carreras", url: "/Carreras" },
     { name: "Examen de Admision", url: "/ExamenAdmision" },
@@ -8,6 +7,7 @@ let data = [
     { name: "Inicio de Sesion", url: "/login"},
     { name: "Quejas", url: "/BuzonQuejas"},
     { name: "Recuperar Contraseña", url: "/Recuperar"},
+    { name: "a", url: "/404"},
 ];
 
 function buscar() {
