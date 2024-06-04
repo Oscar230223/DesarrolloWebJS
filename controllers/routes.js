@@ -5,8 +5,8 @@ router.get("/", (req, res) => {
     res.render("index");
 });
 
-router.get("/ActualizarContraseña", (req, res) => {
-    res.render("actualizar_contraseña");
+router.get("/actualizar_contrasena", (req, res) => {
+    res.render("actualizar_contrasena");
 });
 
 router.get("/Alumnos", (req, res) => {
