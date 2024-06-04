@@ -64,4 +64,8 @@ router.get("/Perfil", (req, res) => {
 router.get("/404", (req, res) => {
     res.render("404");
 });
+
+router.get("/faqs", (req, res) => {
+    res.render("faqs");
+});
 module.exports = router;

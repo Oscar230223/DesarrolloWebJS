@@ -7,9 +7,7 @@ let data = [
     { name: "Registro", url: "/registro"},
     { name: "Inicio de Sesion", url: "/login"},
     { name: "Quejas", url: "/BuzonQuejas"},
-    { name: "Chat", url: "/Chat"},
-    { name: "Recuperar Contraseña", url: "/Recuperar_Contraseña"},
-    { name: "Perfil", url: "/Perfil"}
+    { name: "Recuperar Contraseña", url: "/Recuperar"},
 ];
 
 function buscar() {
